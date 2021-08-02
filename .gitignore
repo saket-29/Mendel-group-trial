@@ -37,3 +37,6 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+Diyar/output/.DS_Store
+Diyar/.DS_Store
+.DS_Store
