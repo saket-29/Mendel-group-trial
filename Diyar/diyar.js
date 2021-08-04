@@ -1,8 +1,28 @@
 //import FileSystem library
 const fs = require('fs');
+let name = "Diyar"
+let email = "deyarbakr1997@gmail.com"
+let bioStack = "Software Development"
+let slackName = "@diyar"
+let twitterHandle = "@deyarrr4"
+
+//Hamming Distance
+function hammingDist(str1, str2)
+{
+    let i = 0, count = 0;
+    while (i < str1.length)
+    {
+        if (str1[i] != str2[i])
+            count++;
+        i++;
+    }
+    return count;
+}
+
+var HammingDistValue = hammingDist (slackName, twitterHandle)
 
 //Add info string into a variable seperated by commas
-var info = "diyar,deyarbakr1997@gmail.com,@diyar,Software Development"
+let info = [name, email, slackName, bioStack, twitterHandle,HammingDistValue].join(',');
 
 //write info to a .txt file saved in output/ folder
 fs.writeFile('./output/diyar.txt',info,(err) => {
