@@ -6,11 +6,17 @@ let bioStack = "Software Development"
 let slackName = "@diyar"
 let twitterHandle = "@deyarrr4"
 
+function longerString (a, b) {
+  return a.length > b.length ? a : b;
+}
+compareStr = longerString(slackName,twitterHandle)
 //Hamming Distance
 function hammingDist(str1, str2)
 {
+  str1.toLowerCase();
+  str2.toLowerCase();
     let i = 0, count = 0;
-    while (i < str1.length)
+    while (i < compareStr.length)
     {
         if (str1[i] != str2[i])
             count++;
