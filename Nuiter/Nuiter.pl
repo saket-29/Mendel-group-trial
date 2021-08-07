@@ -7,7 +7,7 @@ use warnings;
 my $name = 'Angel Perez';
 my $email= 'nuiter@gmail.com';
 my $slacknick='@Nuiter';
-my $biostack='Genomics, DS, M&D Learning';
+my $biostack='Genomics DS M&D Learning';
 my $twit_handle='@Nuiter_Qur';  
 
 my $out_dir = 'output';
