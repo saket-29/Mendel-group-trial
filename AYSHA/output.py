@@ -1,10 +1,6 @@
-name="Aysha"
-email="saniyarcot123@gmail.com"
-slackid="@aysha"
-biostack="transcriptomics"
-twitterid="@aysha_saniya"
-output= name + "," + email + "," + slackid + "," + biostack + "," + twitterid
-print(output)
-file = open('C:/Users/HEWLETT PACKARD/Desktop/AYSHA/output.txt', 'w')
-file.write(output)
-file.close()
+Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+===== RESTART: C:\Users\HEWLETT PACKARD\Desktop\AYSHA\output\output.txt =====
+Aysha,saniyarcot123@gmail.com,@aysha,transcriptomics,@aysha_saniya,7
+>>> 

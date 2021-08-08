@@ -1,1 +1,19 @@
-Aysha,saniyarcot123@gmail.com,@aysha,transcriptomics,@aysha_saniya
+name="Aysha"
+email="saniyarcot123@gmail.com"
+slackid="@aysha"
+biostack="transcriptomics"
+twitterid="@aysha_saniya"
+from itertools import zip_longest
+
+def hammingDist(slackid, twitterid):
+    slackid.lower()
+    twitterid.lower()
+    return sum(c1 != c2 for c1, c2 in zip_longest(slackid,twitterid))
+
+
+hamming_distance = hammingDist(slackid, twitterid)
+output= name + "," + email + "," + slackid + "," + biostack + "," + twitterid + "," + str(hamming_distance)
+print(output)
+file = open('C:/Users/HEWLETT PACKARD/Desktop/AYSHA/output.txt', 'w')
+file.write(output)
+file.close()
