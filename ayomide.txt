@@ -1,0 +1,18 @@
+name = "Ayomide Abesin" 
+email = "adebesinayomide2@gmail.com" 
+slack_username = "@Ayomide" 
+biostack = "Drug Development" 
+twitter_handle = "@Adebesinayomi10" 
+
+from itertools import zip_longest 
+def hammingDist(slack_username,twitter_handle):
+    slack_username.lower() 
+    twitter_handle.lower() 
+    return sum(c1!= c2 for c1, c2 in zip_longest(slack_username, twitter_handle)) 
+
+hamming_distance = hammingDist(slack_username, twitter_handle) 
+
+output = name + "," + email + "," + slack_username + "," + biostack + "," + twitter_handle + "," + str(hamming_distance) 
+
+print(output) 
+    
